@@ -1,0 +1,96 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+BODY {
+  font-family: Helvetica;
+}
+A {
+  color: #e27228;
+  text-decoration: none;
+}
+NAV UL {
+  margin: 0;
+  padding: 0;
+}
+NAV LI {
+  display: inline-block;
+}
+#MainNav {
+  background: #f0f0f0;
+}
+#MainNav LI {
+  padding: 10px;
+}
+.carousel .slides {
+  margin: 0;
+  padding: 0;
+  height: 400px;
+}
+.carousel .slide {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #fff;
+}
+.carousel .tabs {
+  width: 912px;
+  margin: 0px auto;
+  padding: 0;
+  font-size: 0;
+}
+.carousel .tab {
+  font-size: 18px;
+  display: inline-block;
+  margin: 0 2px;
+  vertical-align: middle;
+  -webkit-border-radius: 8px 8px 0 0;
+  border-radius: 8px 8px 0 0;
+  background: #000;
+  opacity: 0.3;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+}
+.carousel .active-tab {
+  background: #fff;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
+.carousel .tab-icon {
+  display: inline-block;
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.carousel .tab A {
+  display: block;
+  width: 300px;
+  height: 100px;
+  padding: 20px 20px;
+  color: #fff;
+}
+.carousel .active-tab A {
+  color: #000;
+}
+#Carousel {
+  background-color: #666;
+}
+#Carousel .tab-1 .tab-icon {
+  background-image: url("../img/tab_icon_a.png");
+}
+#Carousel .tab-2 .tab-icon {
+  background-image: url("../img/tab_icon_b.png");
+}
+#Carousel .tab-3 .tab-icon {
+  background-image: url("../img/tab_icon_c.png");
+}
+#Carousel .slide-1 {
+  background-image: url("../img/image1.jpg");
+}

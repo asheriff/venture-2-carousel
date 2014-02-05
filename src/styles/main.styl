@@ -1,0 +1,98 @@
+@import '../../node_modules/nib'
+
+// -----------------------------------------------------------------------------
+// Typeography
+// --------------------------------------------------------------------------
+*
+  box-sizing: border-box
+// -----------------------------------------------------------------------------
+// Typeography
+// -----------------------------------------------------------------------------
+BODY
+  font-family: Helvetica
+A
+  color: #E27228
+  text-decoration: none
+
+// -----------------------------------------------------------------------------
+// Page elements
+// -----------------------------------------------------------------------------
+NAV
+  UL
+   margin: 0
+   padding: 0
+  LI
+    display: inline-block
+
+// -----------------------------------------------------------------------------
+// Structure
+// -----------------------------------------------------------------------------
+#MainNav
+  background: #F0F0F0
+  LI
+    padding: 10px
+
+// -----------------------------------------------------------------------------
+// Carousel Components
+// -----------------------------------------------------------------------------
+$SLIDE_HEIGHT = 400px
+$TAB_WIDTH = 300px
+
+.carousel
+  .slides
+    margin: 0
+    padding: 0
+    height: $SLIDE_HEIGHT
+  .slide
+    display: block
+    margin: 0
+    padding: 0
+    background-repeat: no-repeat
+    background-position: center center
+    color: #FFF
+  .tabs
+    width: ($TAB_WIDTH + 4px) * 3
+    margin: 0px auto
+    padding: 0
+    font-size: 0
+  .tab
+    font-size: 18px
+    display: inline-block
+    margin: 0 2px
+    vertical-align: middle
+    border-radius(8px 8px 0 0)
+    background: #000
+    opacity(.3)
+  .active-tab
+    background: #FFF
+    opacity(1)
+  .tab-icon
+    display: inline-block
+    float: left
+    width: 60px
+    height: 60px
+    margin-right: 20px
+    background-repeat: no-repeat
+    background-position: center center
+  .tab A
+    display: block
+    width: $TAB_WIDTH
+    height: 100px
+    padding: 20px 20px
+    color: #FFF
+  .active-tab A
+    color: #000
+
+// -----------------------------------------------------------------------------
+// My carousel
+// -----------------------------------------------------------------------------
+#Carousel
+  background-color: #666
+  .tab-1 .tab-icon
+    background-image: url('../img/tab_icon_a.png')
+  .tab-2 .tab-icon
+    background-image: url('../img/tab_icon_b.png')
+  .tab-3 .tab-icon
+    background-image: url('../img/tab_icon_c.png')
+  .slide-1
+    background-image: url('../img/image1.jpg')

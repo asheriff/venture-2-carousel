@@ -1,0 +1,19 @@
+{
+  "name": "ns-slider",
+  "version": "0.0.0",
+  "description": "ERROR: No README.md file found!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Aaron Sheriff",
+  "license": "BSD",
+  "devDependencies": {
+    "gulp": "~3.5.1",
+    "gulp-jade": "~0.4.1",
+    "gulp-util": "~2.2.14",
+    "gulp-stylus": "0.0.12",
+    "nib": "~1.0.2"
+  }
+}

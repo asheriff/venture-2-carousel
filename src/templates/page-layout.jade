@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+  head
+    title Venture2
+    link(href='./css/main.css' type='text/css' rel='stylesheet')
+
+  body
+    h1 Venture2
+  nav
+    ul#MainNav
+      each link in main_nav
+        li: a(href='#')= link.name
+
+  section.carousel#Carousel
+    ul.slides
+      li.slide.slide-1
+        h2 Break on through.
+        h3 Big ideas onlu matter if they get to market.
+      li.slide.slide-2
+      li.slide.slide-3
+    ul.tabs
+      li.tab.tab-1.active-tab
+        a(href='#tab-1')
+          span.tab-icon &nbsp;
+          span.copy
+            | Business Creation Consulting
+      li.tab.tab-2
+        a(href='#tab-2')
+          span.tab-icon &nbsp;
+          span.copy
+            | Open Innovation Consulting
+      li.tab.tab-3
+        a(href='#tab-3')
+          span.tab-icon &nbsp;
+          span.copy
+            | Venture2 COLABS &#8480;
+
