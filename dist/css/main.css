@@ -4,11 +4,32 @@
   box-sizing: border-box;
 }
 BODY {
+  margin: 0;
+  padding: 0;
   font-family: Helvetica;
+  font-size: 12px;
 }
 A {
   color: #e27228;
   text-decoration: none;
+}
+H2 {
+  font-size: 22px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+A.button {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  padding: 6px 10px;
+  background-color: #aaa;
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #fff;
+}
+P.headline {
+  font-size: 18px;
+  color: #aaa;
 }
 NAV UL {
   margin: 0;
@@ -19,40 +40,69 @@ NAV LI {
 }
 #MainNav {
   background: #f0f0f0;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 #MainNav LI {
   padding: 10px;
 }
+#MainNav A {
+  color: #000;
+}
+#ContentCarousel H2 {
+  color: #000;
+}
+#Communications {
+  margin: 3em 0 1em;
+  padding: 2em 0;
+  background-color: #eee;
+}
+#Communications .content {
+  width: 1184px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#Communications H2 {
+  font-size: 14px;
+  color: #00f;
+}
+.carousel .stage {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
 .carousel .slides {
+  position: relative;
+  display: block;
+  list-style: none;
+  width: 2000000em;
   margin: 0;
   padding: 0;
-  height: 400px;
 }
 .carousel .slide {
   display: block;
-  margin: 0;
-  padding: 0;
-  background-repeat: no-repeat;
-  background-position: center center;
+  float: left;
   color: #fff;
 }
 .carousel .tabs {
+  position: relative;
   width: 912px;
   margin: 0px auto;
   padding: 0;
   font-size: 0;
 }
 .carousel .tab {
-  font-size: 18px;
   display: inline-block;
   margin: 0 2px;
   vertical-align: middle;
   -webkit-border-radius: 8px 8px 0 0;
   border-radius: 8px 8px 0 0;
-  background: #000;
-  opacity: 0.3;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
+  background: #999;
+  opacity: 0.7;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  font-size: 16px;
+  text-transform: uppercase;
 }
 .carousel .active-tab {
   background: #fff;
@@ -72,25 +122,41 @@ NAV LI {
 .carousel .tab A {
   display: block;
   width: 300px;
-  height: 100px;
+  height: 101px;
   padding: 20px 20px;
   color: #fff;
 }
 .carousel .active-tab A {
   color: #000;
 }
-#Carousel {
+#ImageCarousel {
+  margin-bottom: 20px;
   background-color: #666;
 }
-#Carousel .tab-1 .tab-icon {
+#ImageCarousel .tabs {
+  margin-top: -104px;
+}
+#ImageCarousel .stage {
+  width: 1184px;
+}
+#ImageCarousel .slide {
+  height: auto;
+  width: 1184px;
+}
+#ImageCarousel .tab-1 .tab-icon {
   background-image: url("../img/tab_icon_a.png");
 }
-#Carousel .tab-2 .tab-icon {
+#ImageCarousel .tab-2 .tab-icon {
   background-image: url("../img/tab_icon_b.png");
 }
-#Carousel .tab-3 .tab-icon {
+#ImageCarousel .tab-3 .tab-icon {
   background-image: url("../img/tab_icon_c.png");
 }
-#Carousel .slide-1 {
-  background-image: url("../img/image1.jpg");
+#ContentCarousel .stage {
+  width: 1184px;
+}
+#ContentCarousel .slide {
+  height: auto;
+  width: 1184px;
+  padding: 1em 0;
 }

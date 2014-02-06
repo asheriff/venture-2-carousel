@@ -6,32 +6,73 @@ html(lang="en")
 
   body
     h1 Venture2
+
   nav
     ul#MainNav
       each link in main_nav
         li: a(href='#')= link.name
 
-  section.carousel#Carousel
-    ul.slides
-      li.slide.slide-1
-        h2 Break on through.
-        h3 Big ideas onlu matter if they get to market.
-      li.slide.slide-2
-      li.slide.slide-3
+  section.carousel#ImageCarousel
+    .stage
+      ul.slides
+        li.slide.slide-1
+          img.bg-img(src='img/image1.jpg')
+        li.slide.slide-2
+          img.bg-img(src='img/image2.jpg')
+        li.slide.slide-3
+          img.bg-img(src='img/image3.jpg')
+        li.slide.slide-x
+
+
     ul.tabs
-      li.tab.tab-1.active-tab
-        a(href='#tab-1')
+      li.tab.tab-1
+        a(href='#section-1')
           span.tab-icon &nbsp;
           span.copy
             | Business Creation Consulting
       li.tab.tab-2
-        a(href='#tab-2')
+        a(href='#section-2')
           span.tab-icon &nbsp;
           span.copy
             | Open Innovation Consulting
       li.tab.tab-3
-        a(href='#tab-3')
+        a(href='#section-3')
           span.tab-icon &nbsp;
           span.copy
-            | Venture2 COLABS &#8480;
+            | Venture2 COLABS&#8480;
 
+  section.carousel#ContentCarousel
+    .stage
+      .slides.content
+        section.slide.slide-1#section-1
+          h2 Business Creation Consulting
+          p.headline
+            | For inspired business leaders who want to accelerate new business
+            | models and growth platforms through entrepenurial models.
+          a.button(href='#') Learn More
+
+        section.slide.slide-2#section-2
+          h2 Open Innovation Consulting
+          p.headline
+            | Lobortis vel aptent hendrerit vel laoreet enim utrum bene laoreet.
+            | Roto at occuro.
+          a.button(href='#') Learn More
+
+        section.slide.slide-3#section-3
+          h2 Venture2 COLABS&#8480;
+          p.headline
+            | Exerci ut huic. Velit epulae aptent tamen et ut ut. Vel et damnum
+            | eum multo antehabeo ex vel consequat facilisis.
+          a.button(href='#') Learn More
+
+        section.slide.slide-x
+
+  section#Communications
+    .content
+      h2 Recent News
+      | Exerci ut huic. Velit epulae aptent tamen et ut ut. Vel et damnum eum
+      | multo antehabeo ex vel consequat facilisis.
+
+  script(src='js/jquery.js')
+  script(src='js/jquery.jcarousel.js')
+  script(src='js/site.js')

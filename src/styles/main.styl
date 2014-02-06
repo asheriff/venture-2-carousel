@@ -1,18 +1,46 @@
 @import '../../node_modules/nib'
 
+// ---------------------------------------------------------------------------
+// Variables
+// ---------------------------------------------------------------------------
+$CONTENT_WIDTH = 1184px
+$TAB_WIDTH = 300px
+$TAB_COUNT = 3
+
 // -----------------------------------------------------------------------------
-// Typeography
+// Sanity
 // --------------------------------------------------------------------------
 *
   box-sizing: border-box
+
 // -----------------------------------------------------------------------------
 // Typeography
 // -----------------------------------------------------------------------------
 BODY
+  margin: 0
+  padding: 0
   font-family: Helvetica
+  font-size: 12px
 A
   color: #E27228
   text-decoration: none
+
+H2
+  font-size: 22px
+  font-weight: normal
+  text-transform: uppercase
+
+A.button
+  border-radius(4px)
+  padding: 6px 10px
+  background-color: #AAA
+  font-size: 9px
+  text-transform: uppercase
+  color: #FFF
+
+P.headline
+  font-size: 18px
+  color: #AAA
 
 // -----------------------------------------------------------------------------
 // Page elements
@@ -29,40 +57,66 @@ NAV
 // -----------------------------------------------------------------------------
 #MainNav
   background: #F0F0F0
+  font-size: 12px
+  text-transform: uppercase
   LI
     padding: 10px
+  A
+    color: #000
+
+#ContentCarousel
+  H2
+    color: #000
+
+#Communications
+  margin: 3em 0 1em
+  padding: 2em 0
+  background-color: #EEE
+
+  .content
+    width: $CONTENT_WIDTH
+    margin-left: auto
+    margin-right: auto
+
+  H2
+    font-size: 14px
+    color: blue
 
 // -----------------------------------------------------------------------------
-// Carousel Components
+// Carousel Component
 // -----------------------------------------------------------------------------
-$SLIDE_HEIGHT = 400px
-$TAB_WIDTH = 300px
-
 .carousel
+  .stage
+    position: relative
+    overflow: hidden
+    margin: 0 auto
   .slides
+    position: relative
+    display: block
+    list-style: none
+    width: 2000000em
     margin: 0
     padding: 0
-    height: $SLIDE_HEIGHT
   .slide
     display: block
-    margin: 0
-    padding: 0
-    background-repeat: no-repeat
-    background-position: center center
+    float: left
     color: #FFF
+
   .tabs
-    width: ($TAB_WIDTH + 4px) * 3
+    position: relative
+    width: $TAB_COUNT * ($TAB_WIDTH + 4px)
     margin: 0px auto
     padding: 0
     font-size: 0
   .tab
-    font-size: 18px
     display: inline-block
     margin: 0 2px
     vertical-align: middle
     border-radius(8px 8px 0 0)
-    background: #000
-    opacity(.3)
+    background: #999
+    opacity(.7)
+    font-size: 16px
+    text-transform: uppercase
   .active-tab
     background: #FFF
     opacity(1)
@@ -77,22 +131,36 @@ $TAB_WIDTH = 300px
   .tab A
     display: block
     width: $TAB_WIDTH
-    height: 100px
+    height: 101px
     padding: 20px 20px
     color: #FFF
   .active-tab A
     color: #000
 
 // -----------------------------------------------------------------------------
-// My carousel
+// My carousels
 // -----------------------------------------------------------------------------
-#Carousel
+#ImageCarousel
+  margin-bottom: 20px
   background-color: #666
+  .tabs
+    margin-top: -104px
+  .stage
+    width: $CONTENT_WIDTH
+  .slide
+    height: auto
+    width: $CONTENT_WIDTH
   .tab-1 .tab-icon
     background-image: url('../img/tab_icon_a.png')
   .tab-2 .tab-icon
     background-image: url('../img/tab_icon_b.png')
   .tab-3 .tab-icon
     background-image: url('../img/tab_icon_c.png')
-  .slide-1
-    background-image: url('../img/image1.jpg')
+
+#ContentCarousel
+  .stage
+    width: $CONTENT_WIDTH
+  .slide
+    height: auto
+    width: $CONTENT_WIDTH
+    padding: 1em 0
