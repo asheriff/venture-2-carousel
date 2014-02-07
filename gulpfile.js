@@ -34,9 +34,16 @@ gulp.task('styles', function() {
   ;
 });
 
+gulp.task('scripts', function() {
+  gulp.src('./src/js/*')
+    .pipe(gulp.dest('./dist/js'))
+  ;
+});
+
 gulp.task('watch', function() {
   gulp.watch('./src/templates/*.jade', ['templates']);
   gulp.watch('./src/styles/*.styl', ['styles']);
+  gulp.watch('./src/js/*', ['scripts']);
 });
 
-gulp.task('default', ['templates', 'styles']);
+gulp.task('default', ['templates', 'styles', 'scripts']);
