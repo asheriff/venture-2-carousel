@@ -27,7 +27,9 @@ gulp.task('templates', function() {
 
 gulp.task('styles', function() {
   gulp.src('./src/styles/*.styl')
-    .pipe(stylus())
+    .pipe(stylus({
+      paths: ['./node_modules/']
+    }))
     .pipe(gulp.dest('./dist/css'))
   ;
 });
